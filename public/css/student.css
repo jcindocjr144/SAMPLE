@@ -1,0 +1,16 @@
+
+body
+{
+	background:#E8E8E8;
+}
+.bg
+{
+	border-radius:2rem;
+}
+.logo
+{
+	background:WHITE;
+	background-position: center;
+	border-radius:50px;
+	margin-left:-2rem;
+}

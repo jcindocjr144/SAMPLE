@@ -1,0 +1,104 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sla
+{
+	font-size: 30px;
+}
+.two
+{
+	display: none;
+}
+.button
+{
+	width:60%;
+	padding:5px;
+}
+.red
+{
+	color: RED;
+}
+.home
+{
+	background-image: url(../images/back.gif); 
+	background-size:100%; 
+	background-position: center;
+	height:100vh;
+	animation: anima 1s infinite;
+	
+}
+@keyframes anima
+{
+0%{text-shadow: 0 0 10px RED;}
+25%{text-shadow: 0 0 10px YELLOW;}
+50%{text-shadow: 0 0 10px RED;}
+75%{text-shadow: 0 0 10px YELLOW;}
+100%{text-shadow: 0 0 10px RED;}
+}
+.logo
+{
+	background:WHITE;
+	background-position: center;
+	border-radius:30px;
+}
+.learn
+{
+	font-size: 5rem;
+}
+.about
+{
+	background:#A9A9A9;
+	height: 100vh;
+}
+.contacts{
+	background:#cfc0c0;
+	background-size:100%; 
+	background-position: center;
+	background-repeat:no-repeat;
+	height:100vh;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 20;
+	left: 0;
+	background-color: #7c7474;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #f9f0f0;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+	color: #161111;
+  }
+  
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	font-size: 30px;
+	margin-left: 70px;
+  }
+  
+  #main {
+	transition: margin-left .5s;
+	padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
