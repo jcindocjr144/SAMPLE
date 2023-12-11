@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: rgb(207, 207, 207);
+    padding-top: 0px;
+}
+.string{
+  width:300px;
+  height:40px;
+  border-radius:10px;
+}
+.btns{
+    text-align: center;  
+ }
+ 
+.logo
+{
+	background:WHITE;
+	background-position: center;
+	border-radius:30px;
+}
+
+.green {
+    background-color: #5cb85c; 
+    color: white;
+}
+.red {
+    background-color: #d9534f; 
+    color: white;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 30;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-left:180px;
+    
+  }
+  .sidenav .closebtn:hover {
+    background: black;
+  }
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(249, 239, 239);
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    outline: none;
+  }
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: WHITE;
+    background:RED;
+  }
+  .dropdown-container {
+    display: none;
+    color: RED;
+    background:rgb(100 116 139);
+    padding-left: 8px;
+  }
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    background-color: rgb(226 232 240);
+    height:665px;
+  
+  }
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

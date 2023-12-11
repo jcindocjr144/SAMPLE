@@ -1,1 +1,1 @@
-<img src="images/logo.png" width="50">
+<img src="images/logo.png" width="50" style="background:WHITE; border-radius:50px;">

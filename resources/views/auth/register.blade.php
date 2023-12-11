@@ -3,6 +3,13 @@
 @section("title","SLA Registration")
 
 @section("content")
+<div class="p-2 container-fluid d-flex justify-content-end align-items-end bg-slate-400">
+<x-primary-button >
+        <a href="{{ route('students.register') }}"  style="text-decoration:none; color:white;">Student's Registration</a>
+</x-primary-button>
+<x-primary-button >
+        <a href="{{ route('instructors.register') }}"  style="text-decoration:none; color:white;">Instructor's Registration</a>
+</x-primary-button></div>
 <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
@@ -45,7 +52,7 @@
                 {{ __('Already registered?') }}
             </a>
 
-            <x-primary-button class="ms-4">
+            <x-primary-button class="ms-2">
                 {{ __('Register') }}
             </x-primary-button>
         </div>

@@ -3,10 +3,12 @@
 @section("title","SLA Login")
 
 @section("content")
+
+<div id="admin">
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
-<h1 class="mb-3 text-5xl text-center">Login</h1>
+<p class="mb-3 text-3xl text-center">Login</p>
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
@@ -48,5 +50,7 @@
             
         </div>
      </form>
+     
 </x-guest-layout>
+</div>
 @endsection
