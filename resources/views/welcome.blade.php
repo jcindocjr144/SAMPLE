@@ -62,6 +62,7 @@
   <div class="home d-flex justify-content-center align-items-center">
   <h1 class="text-center text-white learn ">LEARN TO CODE WITH US</h1>
 </div>
+<footer class="p-2 text-center text-white fixed-bottom bg-secondary">© w3schools.com 2023. ALL RIGHTS RESERVED.</footer>
 </div>
 <div id="contact" style="display:none;">
   <div class="contact">
@@ -85,7 +86,7 @@
     </div> 
  </div>
 </div>
-<div id="about" style="display:none; background-color: rgb(203 213 225); height:900px;">
+<div id="about" style="display:none; background-color: rgb(203 213 225); height:1500px;">
     <div class="container-fluid">
         <h1 class="pt-3 text-center fw-light text-uppercase" style="font-family: monospace;">The Development Team</h1></div>
    
@@ -109,7 +110,7 @@
         <img src="images/1.jpg" alt="Avatar" style="width:40%" class="p-3 mx-auto d-block rounded-5">
         <div class="container">
     <h1 class="text-center">Steven son Nava</h1>
-  <p style="font-family: sans-serif; font-size: larger; padding-top:20px;">Proficient in [frontend technologies, frameworks, and languages, e.g., HTML5, CSS3, JavaScript, React], I bring a strong foundation in UI/UX principles and a commitment to delivering visually stunning and functional web applications.</p>
+  <p style="font-family: sans-serif; font-size: larger; padding-top:20px;">Proficient in [frontend technologies, frameworks, and languages, e.g., HTML5, CSS3, JavaScript], I bring a strong foundation in UI/UX principles and a commitment to delivering visually stunning and functional web applications.</p>
   </div></div></div>
   
   <div class="mt-1 col-lg-6 col-12 ">
@@ -199,7 +200,7 @@
 </button>
 </div>
 <div id="main" display:none;>
-  <p class="openbtn" onclick="openNav()"><i class="fa fa-arrow-right" aria-hidden="true"></i> OPEN</p>
+  <p class="openbtn" onclick="openNav()"><i class="fa fa-arrow-right" aria-hidden="true"></i> CLICK TO OPEN</p>
   <div id="welcome" class="col-12">
   <h1 class="text-center">WELCOME TO STUDENTS LEARNING ASSISTANCE</h1>
   <h3 class="text-center">Tutorials</h3>

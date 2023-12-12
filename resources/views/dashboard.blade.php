@@ -46,20 +46,115 @@
 <div id="welcome">
     <h1 class="text-4xl text-center" >Welcome Student</h1></div>
 <div id="class" style="display:none;" class="text-3xl text-center">CLASSES</div>
-<div id="tutor" style="display:none;" class="text-3xl text-center">TUTOR</div>
+<div id="tutor" style="display:none;" class="text-3xl text-center">APPLY FOR A TUTOR
+<table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        
+    @foreach ($users as $user)
+    @if($user->role ==='Instructor')
+      <td>{{ $user->name }}</td>
+      <td>{{ $user->email }}</td>
+      <td>{{ $user->role }}</td>
+            
+    </tr>
+   @endif
+   @endforeach
+   </tbody>
+</table>
+</div>
 @elseif(Auth::user()->role == 'Instructor')
 <div  id="instructorwelcome">
     <h1 class="text-4xl text-center">Welcome Instructor</h1></div>
 <div id="instructorclass" style="display:none;" class="text-3xl text-center">CLASSES</div>
-<div id="instructortutor" style="display:none;" class="text-3xl text-center">STUDENT'S LIST</div>
+<div id="instructortutor" style="display:none;" class="text-3xl text-center">Students List
+<table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        
+    @foreach ($users as $user)
+    @if($user->role ==='Student')
+      <td>{{ $user->name }}</td>
+      <td>{{ $user->email }}</td>
+      <td>{{ $user->role }}</td>
+      
+                      
+    </tr>
+   @endif
+   @endforeach
+   </tbody>
+</table>
+</div>
 @else
 <div id="adminwelcome">
     <h1 class="text-4xl text-center" >Welcome Admin</h1></div>
-<div id="students" style="display:none;" class="text-3xl text-center">Students List</div>
-<div id="instructors" style="display:none;" class="text-3xl text-center">Instructors List</div>
-@endif
-
+<div id="students" style="display:none;" class="text-3xl text-center">Students List
+<table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        
+    @foreach ($users as $user)
+    @if($user->role ==='Student')
+      <td>{{ $user->name }}</td>
+      <td>{{ $user->email }}</td>
+      <td>{{ $user->role }}</td>
+      
+                      
+    </tr>
+   @endif
+   @endforeach
+   </tbody>
+</table>
 </div>
+<div id="instructors" style="display:none;" class="text-3xl text-center">Instructors List
+
+<table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        
+    @foreach ($users as $user)
+    @if($user->role ==='Instructor')
+      <td>{{ $user->name }}</td>
+      <td>{{ $user->email }}</td>
+      <td>{{ $user->role }}</td>
+      
+                      
+    </tr>
+   @endif
+   @endforeach
+   </tbody>
+</table>
+</div>
+
+</div>@endif
 </x-app-layout>
 <script type="text/javascript" src="js/dashboard.js"></script>
   </body>

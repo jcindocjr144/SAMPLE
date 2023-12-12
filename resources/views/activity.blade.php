@@ -13,7 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<nav class="border-2 navbar navbar-expand-sm navbar-dark bg-secondary border-bottom border-warning">
+<nav class="border-2 navbar navbar-expand-sm navbar-dark bg-secondary ">
   <div class="container-fluid">
   <a class="navbar-brand" href="javascript:void(0)"><img src="IMAGES/logo.png" width="30" class="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -77,7 +77,7 @@
 </div>
 
 <div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-arrow-right" aria-hidden="true"></i> OPEN</span>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-arrow-right" aria-hidden="true"></i> CLICK TO OPEN</span>
     <div id="act1" style="display:none;" class="mt-5">
         <h1 class="text-center">HTML Activity no.1</h1>
         <div class="container">

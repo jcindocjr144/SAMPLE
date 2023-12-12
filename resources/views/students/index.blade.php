@@ -7,7 +7,7 @@
     <h1 >Students List</h1></div>
 <br>
 <div class="container-fluid">
-    </table>
+ 
     <table class="table">
   <thead>
     <tr>
