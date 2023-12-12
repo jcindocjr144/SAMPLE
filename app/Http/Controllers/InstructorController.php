@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Http\Requests\StoreInstructorRequest;
 use App\Http\Requests\UpdateInstructorRequest;
 use App\Models\Instructor;
@@ -10,6 +11,13 @@ use Illuminate\Http\RedirectResponse;
 
 class InstructorController extends Controller
 {
+    public function dashboard()
+    {
+       
+        $instructor = auth()->user(); 
+
+        return view('instructors.dashboard');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -52,7 +60,7 @@ class InstructorController extends Controller
      * @param  Instructor  $instructor
      * @return View
      */
-    public function edit(Instructor $instructors): View
+    public function edit(Instructor $instructor): View
     {
         return view('instructors.edit', compact('instructor'));
     }

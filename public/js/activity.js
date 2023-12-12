@@ -438,7 +438,7 @@ function act15(){
     document.getElementById("string29").style.background="WHITE";
 }
 function show1(){
-    document.getElementById("string1").value="<p>This is a paragraph.</p>";
+    document.getElementById("string1").value="paragraph";
         setBoxColor("string1", "cyan");
 }
 function show2(){

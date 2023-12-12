@@ -82,9 +82,9 @@
         <h1 class="text-center">HTML Activity no.1</h1>
         <div class="container">
         <p class="mt-5 text-center">Complete the following:</p>
-        <h4 class="text-center ">_p_This is a paragraph._/p_</h4></div>
+        <h4 class="text-center "><code class="w3-codespan">&lt;p&gt;</code>This is a __________.<code class="w3-codespan">&lt;/p&gt;</code></h4></div>
         <input type="text" id="string1" class="mx-auto mt-3 string d-block">
-        <input type="text" id="string2" value="<p>This is a paragraph.</p>" style="display: none;">
+        <input type="text" id="string2" value="paragraph" style="display: none;">
         <br>
         <div class="text-center">
         <button class="btn btn-primary" onclick="compareStrings1()">Submit</button>

@@ -18,6 +18,11 @@
     <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6">
         @csrf
         @method('patch')
+        <div>
+            <x-input-label for="role" :value="__('Classifications')" class="text-white" />
+            <x-text-input id="role" name="name" type="text" class="block w-full mt-1" :value="old('role', $user->role)" disabled autofocus autocomplete="role" />
+            <x-input-error class="mt-2" :messages="$errors->get('role')" />
+        </div>
 
         <div>
             <x-input-label for="name" :value="__('Username')" class="text-white" />

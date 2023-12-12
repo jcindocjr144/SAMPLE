@@ -1,12 +1,12 @@
 @extends("layouts.layout")
 
-@section("title","SLA Registration")
+@section("title","My Profile")
 
 @section("content")
 <section>
-    <h1 class="mt-5 text-center">Update Status</h1>
+    <h1 class="mt-5 text-center">My Profile</h1>
 
-    <form method="POST" action="{{ route('instructor.update', $instructor) }}" class="mt-3 text-center text-dark">
+    <form method="POST" action="{{ route('instructors.update', $instructor) }}" class="mt-3 text-center text-dark">
         @csrf
         @method('PATCH')
 

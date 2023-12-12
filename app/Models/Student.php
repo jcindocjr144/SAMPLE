@@ -25,5 +25,6 @@ class Student extends Model
         'password',
         'remember_token',
     ];
+    
   
 }

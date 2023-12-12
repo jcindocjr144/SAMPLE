@@ -99,6 +99,7 @@ return [
         ],
     ],
 
+    
     /*
     |--------------------------------------------------------------------------
     | Password Confirmation Timeout
@@ -112,4 +113,19 @@ return [
 
     'password_timeout' => 10800,
 
+    'student' => [
+        'driver' => 'session',
+        'provider' => 'students',
+    ],
+    'api' => [
+        'driver' => 'token',
+        'provider' => 'users',
+        'hash' => false,
+    ],
+    
+    'students' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Student::class,
+    ],
+    
 ];

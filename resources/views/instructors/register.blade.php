@@ -1,6 +1,6 @@
 @extends("layouts.layout")
 
-@section("title","SLA Registration")
+@section("title","Instructor Registration")
 
 @section("content")
   <x-guest-layout>

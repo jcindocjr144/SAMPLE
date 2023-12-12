@@ -11,6 +11,13 @@ use Illuminate\Http\RedirectResponse;
 
 class StudentController extends Controller
 {
+    public function dashboard()
+    {
+       
+        $student = auth()->user(); 
+
+        return view('students.dashboard');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -23,6 +30,7 @@ class StudentController extends Controller
         return view('students.index', compact('students'));
         
     }
+    
 
     /**
      * Show the form for creating a new resource.

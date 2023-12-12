@@ -3,13 +3,6 @@
 @section("title","SLA Registration")
 
 @section("content")
-<div class="p-2 container-fluid d-flex justify-content-end align-items-end bg-slate-400">
-<x-primary-button >
-        <a href="{{ route('students.register') }}"  style="text-decoration:none; color:white;">Student's Registration</a>
-</x-primary-button>
-<x-primary-button >
-        <a href="{{ route('instructors.register') }}"  style="text-decoration:none; color:white;">Instructor's Registration</a>
-</x-primary-button></div>
 <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
@@ -20,7 +13,14 @@
             <x-text-input id="name" class="block w-full mt-1" type="text" name="name" :value="old('name')" placeholder="&#xf007;" style="font-family:Arial, FontAwesome;" autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
-
+        <div class="mt-4">
+        <x-input-label for="role" :value="__('Classification')" />
+        <select id="role" name="role" class="block w-full mt-1 shadow-sm rounded-2 border-slate-300 focus:shadow-lg hover:shadow-lg" required autofocus autocomplete="role" >
+            <option value="Student">Student</option>
+            <option value="Instructor">Instructor</option>
+        </select>
+        <x-input-error :messages="$errors->get('role')" class="mt-2" />
+</div>
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
